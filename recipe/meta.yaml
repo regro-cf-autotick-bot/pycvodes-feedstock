@@ -1,6 +1,6 @@
 {% set name = "pycvodes" %}
-{% set version = "0.14.5" %}
-{% set sha256 = "a365534e2d9280011bb2faa804da8bc3eb137e5042a3bce75ebd65019d674a02" %}
+{% set version = "0.14.6" %}
+{% set sha256 = "469f84051e9ac846535d505bda7d642435aeee370ab575775ecb7df6f863368e" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win and not py>=35]
   features:
 
